@@ -11,5 +11,7 @@ $(EXEC): main.cpp NComplex.o
 NComplex.o: NComplex.h NComplex.cpp
 	$(CXX) $(CXXFLAGS) -c -o NComplex.o NComplex.cpp
 
+.PHONY: clean
+
 clean:
 	rm -rf *.o $(EXEC)
